@@ -1,7 +1,14 @@
 ### Dockerized Adminer
 
-Usage:
+Usage (see `./test/docker-compose.yml`):
 
 ```
-$ docker run -d --name=adminer -p 80:80 hiogawa/adminer:3.3.3
+$ cd ./test
+
+$ docker-compose up -d postgres adminer
+Creating network "test_default" with the default driver
+Creating test_postgres_1
+Creating test_adminer_1
+
+$ open http://$(docker-machine ip default):3456/adminer
 ```

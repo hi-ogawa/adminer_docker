@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  adminer:
+    build: ../
+    ports:
+      - 3456:80
+
+  postgres:
+    image: postgres:9.5.3
+    # by default
+    # - dbname:   postgres
+    # - username: postgres
+    # - password: (blank)
