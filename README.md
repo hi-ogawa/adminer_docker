@@ -12,3 +12,7 @@ Creating test_adminer_1
 
 $ open http://$(docker-machine ip default):3456/adminer
 ```
+
+Screencast:
+
+![](http://wp.hiogawa.net/wp-content/uploads/2016/07/adminer_demo.gif)
